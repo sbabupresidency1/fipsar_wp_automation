@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Test Snapshot</title>
+
+        <link rel="stylesheet" type="text/css" href="../../../../../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../../../../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../../../../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../../../../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../../../../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript">$(document).ready(function() { $(".exception").hide(); $("#showmenu").show(); $('#showmenu').click(function() { $('.exception').toggle("slide"); }); });        </script>    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../../../../../HTML_Design_Files/IMG/fipsar.png" alt="Logo" height="80" width="140" /> <br/>                <td id="headertext">
+           <b> Automation Test Report </b>         
+<div style="padding-right:20px;float:right"><img src="../../../../../../HTML_Design_Files/IMG/logo.png" height="70" width="140" /></div>                </td>
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../../../../../../index.html" >Detail Report View</a></li><li style="padding-top: 4px;"><a href="../../../../../ConsolidatedPage.html" >Test Report Chart View</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">   
+                    <div class="info"><b><font size=3>
+                        Test Case Steps </font></b><br/>
+Test Case Name: <b>CPR_Smoke_Test_firefox</b><br/><b>
+<div class="chartStyle summary" style="background-color: #FF9A36;width: 40%;margin-left: 80px; height: 200px;">          
+                        <b>Execution Platform Details</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>O.S</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Windows 10, amd64Bit, V10.0</td>
+                            </tr>
+                            <tr>
+                                <td>Browser</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>firefox,58.0.2</td>
+                            </tr>
+                                <td>Java</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>1.8.0_161</td>
+                            </tr>
+
+                            <tr>
+                                <td>Hostname</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>LAPTOP-TBBKICN8</td>
+                            </tr>
+
+                            <tr>
+                                <td>Selenium</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>3.11.0</td>
+                            </tr>
+                        </table>  
+                    </div>
+                   
+ <div class="chartStyle summary" style="background-color: #E03C31;margin-left: 20px; height: 200px;width: 40%; ">
+                        <b>
+ Test Snapshot</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>Status</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Failed</td>
+                            </tr>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>29-May-2018 04:55:54                            </tr>
+                        Current Test Execution   &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;<b> Execution 3</b></br>
+                        Time Taken for Execution :&nbsp;&nbsp;<b>                                <td>&nbsp;&nbsp;&nbsp;</td>108 s                                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</b> <br/>                        </table> 
+                    </div>
+   <div>
+                        <table class="chartStyle" id="tableStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Test Procedure</th>
+                                <th>Input Data</th>
+                                <th>Expected Results</th>
+                                <th>Actual Value</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Screen shot</th>
+                            </tr>
+                           
+
+<tr><td>1</td>
+<td>Failed to find Element</td>
+<td></td>
+<td></td>
+<td></td>
+<td>106 s</td>
+<td><img style="height:18px;width:18px;border:none"  alt="FAIL" src="../../../../../..//HTML_Design_Files/IMG/logfail.png" /></td>
+<td><a target="_blank" href="img/1.PNG"><img alt="No Screenshot" src="img/1.PNG"/></a></td>
+</tr>
+                        </div></table>  
+<div class="chartStyle summary" style="color: black;width: 98%; height: 100%; padding-bottom: 30px;">          
+
+<b> </b><br/>Test Case Name: CPR_Smoke_Test_firefox<br/>                        <br/><br/><b>Reason for Failure:&nbsp;&nbsp;</b>No such Element exists{acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5336, moz:profile: C:\Users\Babu\AppData\Local..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c018fe4d-8db1-4359-ad78-e7b7fc403265
+*** Element info: {Using=id, value=cpmTabbedNavigation-DIVFrame<br/><br/>
+<b id="showmenu">Click Me to Show/Hide the Full Stack Trace</b><div class="exception">
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #cpmTabbedNavigation\-DIVFrame
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-TBBKICN8', ip: '192.168.12.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5336, moz:profile: C:\Users\Babu\AppData\Local..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c018fe4d-8db1-4359-ad78-e7b7fc403265
+*** Element info: {Using=id, value=cpmTabbedNavigation-DIVFrame}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.fipsar.qa.CPR.SmokeTest.FAF_Smoke_Test(SmokeTest.java:107)
+	at com.fipsar.qa.util.CommandUtils.executeAction(CommandUtils.java:763)
+	at com.fipsar.qa.datadriver.TestCaseRunner.exectuteTestCase(TestCaseRunner.java:52)
+	at TestNGClass.launchapp(TestNGClass.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</div>                    
+
+                </td>
+            </tr>

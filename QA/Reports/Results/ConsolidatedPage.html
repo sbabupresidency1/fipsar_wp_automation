@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Execution Summary</title>
+
+        <link rel="stylesheet" type="text/css" href="../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../HTML_Design_Files/CSS/jquery.jqplot.css" />
+        <link rel="Stylesheet" type="text/css" href="../HTML_Design_Files/CSS/jquery-ui.min.css"  />
+
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.barRenderer.min.js"></script> 
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.categoryAxisRenderer.min.js"></script>
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.pointLabels.min.js"></script>
+
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.highlighter.min.js"></script>
+
+        <script type="text/javascript" src="barChart.js"></script>
+        <script type="text/javascript" src="lineChart.js"></script>
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jquery-ui.min.js"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#tabs").tabs();
+
+                $('#tabs').bind('tabsshow', function(event, ui) {
+                    if (ui.index === 1 && plot1._drawCount === 0) {
+                        plot1.replot();
+                    }
+                    else if (ui.index === 2 && plot2._drawCount === 0) {
+                        plot2.replot();
+                    }
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../HTML_Design_Files/IMG/fipsar.png" alt="Logo" height="70" width="140" /> <br/>                <td id="headertext">
+                    <b> Automation Test Report </b> 
+<div style="padding-right:20px;float:right"><img src="../HTML_Design_Files/IMG/logo.png" height="70" width="140" /> </i></div>                </td>
+            </tr>
+
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../index.html" >Test Reports Chart View</a></li>
+
+
+ <li class="menuStyle"><a href="Run_3\CurrentRun.html" > Execution 3 (29-05-18, 04.54 PM) </a></li>
+
+
+ <li class="menuStyle"><a href="Run_2\CurrentRun.html" > Execution 2 (29-05-18, 04.53 PM) </a></li>
+
+
+ <li style="padding-top: 3px;padding-bottom: 3px;"><a href="Run_1\CurrentRun.html" > Execution 1 (29-05-18, 04.21 PM) </a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">
+
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">Line Chart</a></li>
+                            <li><a href="#tabs-2">Bar Chart</a></li>      
+                        </ul>
+                        <div id="tabs-1" style="text-align: left;">
+                            <p class="info" style="text-align: center;color: black;font-size: 14px">
+     </p>                            
+                            <div id="line" style="height: 270px;  width: 85%; margin-top: 20px;color:black;"></div>
+
+                        </div>
+                        <div id="tabs-2" style="text-align: left;">
+                            <p class="info" style="text-align: center;color: black;font-size: 14px">
+                                                           </p>
+                            <div id="bar" style="margin-top:20px; margin-left:20px; width:85%; height:300px;color:black;"></div>
+                        </div>    
+                    </div> 
+                </td>
+            </tr>
