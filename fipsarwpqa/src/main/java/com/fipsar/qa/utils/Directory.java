@@ -75,8 +75,7 @@ public class Directory {
 	public static String Reports_Path=null;
 	public static String Zipfolder_Path=null;
 	public static String WIDGET_HTML_FILE=null;
-	public static String WaitFor=null;
-	public static String yopmailurl=null;
+	public static String WaitFor=null;	
 	public static String Coachesurl=null;
 	public static String OpsAdminurl=null;	
 	public static String Guerrillamailurl=null;
@@ -91,6 +90,18 @@ public class Directory {
 	public static String Sql_Pass=null;
 	public static String Sql_Port=null;	
 	public static String uploadFilePath=null;
+	public static String cpr_qa_url=null;
+	public static String cpr_qa_navigate_url=null;
+	public static String cpr_qa_username=null;
+	public static String cpr_qa_password=null;
+	public static String lls_qa_url=null;
+	public static String lls_qa_navigate_url=null;
+	public static String lls_qa_username=null;
+	public static String lls_qa_password=null;
+	public static String faf_qa_url=null;
+	public static String faf_qa_navigate_url=null;
+	public static String faf_qa_username=null;
+	public static String faf_qa_password=null;
 
 
 	/**
@@ -139,16 +150,28 @@ public class Directory {
 				GRID_IP = localProperties.getProperty(			"fipsar.Grid").trim().toLowerCase();
 
 				//URLs and Credentials for PAF  - CPR
-				/*Properties urlsProperties = new Properties();
+				Properties urlsProperties = new Properties();
 				System.out.println("testCasePath: "+testCasePath);
 				InputStream input = new FileInputStream(testCasePath+"/"+"urls.properties");
-				urlsProperties.load(input);	*/
+				urlsProperties.load(input);	
 			
 				//CPR
+				cpr_qa_url=urlsProperties.getProperty("cpr_qa_url".trim());
+				cpr_qa_navigate_url=urlsProperties.getProperty("cpr_qa_navigate_url".trim());
+				cpr_qa_username=urlsProperties.getProperty("cpr_qa_username".trim());
+				cpr_qa_password=urlsProperties.getProperty("cpr_qa_password".trim());
 				
-				//LLS
+				//LLS:
+				lls_qa_url=urlsProperties.getProperty("lls_qa_url".trim());
+				lls_qa_navigate_url=urlsProperties.getProperty("lls_qa_navigate_url".trim());
+				lls_qa_username=urlsProperties.getProperty("lls_qa_username".trim());
+				lls_qa_password=urlsProperties.getProperty("lls_qa_password".trim());
 				
-				//FAF
+				//FAF:
+				faf_qa_url=urlsProperties.getProperty("faf_qa_url".trim());
+				faf_qa_navigate_url=urlsProperties.getProperty("faf_qa_navigate_url".trim());
+				faf_qa_username=urlsProperties.getProperty("faf_qa_username".trim());
+				faf_qa_password=urlsProperties.getProperty("faf_qa_password".trim());
 				
 				try {
 					if ((headerText != null) && (headerText.length() > 0)) {

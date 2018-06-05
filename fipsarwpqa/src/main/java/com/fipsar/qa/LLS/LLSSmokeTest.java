@@ -24,7 +24,7 @@ public class LLSSmokeTest {
 	private static Workbook wb;
 	public  static void LLS_Smoke_Test(WebDriver driver) throws InterruptedException, IOException
 	{
-		int urls = 1; 
+		int urls = 2; 
 		int users = 5;
 		int datas = 6;
 		
@@ -92,15 +92,16 @@ public class LLSSmokeTest {
 					wait.until(ExpectedConditions.elementToBeClickable(By.id(OR.PATIENT_ID_FIELD)));
 					driver.findElement(By.id(OR.PATIENT_ID_FIELD)).sendKeys(PID);
 
-					Thread.sleep(2000);
+					Thread.sleep(4000);
 					driver.findElement(By.cssSelector(OR.PATIENT_SEARCH_BUTTON)).click();
 
-					Thread.sleep(2000);
+					Thread.sleep(4000);
 					wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.PATIENT_RECORD +PID+ OR.PATIENT_RECORD_END)));
 					driver.findElement(By.xpath(OR.PATIENT_RECORD +PID+ OR.PATIENT_RECORD_END)).click();
 
+					Thread.sleep(2000);
 					driver.findElement(By.id(OR.PATIENT_SUBMIT_BUTTON)).click();
-
+					Thread.sleep(1000);
 					wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.PATIENT_INFO_DOB)));
 					driver.findElement(By.xpath(OR.PATIENT_INFO_DOB)).click();
 
@@ -136,14 +137,17 @@ public class LLSSmokeTest {
 					d2.selectByIndex(2);
 
 					driver.findElement(By.id(OR.WRAPUP_NOTES)).sendKeys("testing");
+					
+					Thread.sleep(2000);
 					driver.findElement(By.id(OR.PATIENT_SUBMIT_BUTTON)).click();
 					
 					System.out.println("submitted successfully");
 					driver.switchTo().defaultContent();
 				}
-
+				Thread.sleep(1000);
 				wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.CSR_NAME_LINK)));
 				driver.findElement(By.xpath(OR.CSR_NAME_LINK)).click();
+				Thread.sleep(1000);
 
 				wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.LOGOUT_LINK)));
 				driver.findElement(By.xpath(OR.LOGOUT_LINK)).click();

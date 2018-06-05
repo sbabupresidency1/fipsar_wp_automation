@@ -46,12 +46,7 @@
 			<artifactId>lift</artifactId>
 			<version>3.11.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-opera-driver -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-opera-driver</artifactId>
-			<version>3.11.0</version>
-		</dependency>
+		
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
 		<dependency>
@@ -80,13 +75,7 @@
 			<artifactId>selenium-leg-rc</artifactId>
 			<version>3.11.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-opera-driver -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-opera-driver</artifactId>
-			<version>3.11.0</version>
-		</dependency>
-
+		
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/jetty-repacked -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -329,7 +318,7 @@
 				<configuration>
 					<!-- get all project dependencies -->
 					<descriptorRefs>
-						<descriptorRef>jars</descriptorRef>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
 					<!-- MainClass in mainfest make a executable jar -->
 					<archive>

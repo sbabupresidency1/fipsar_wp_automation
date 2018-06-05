@@ -1,1 +1,1 @@
-java -jar -Dfipsar.reporter.config=C:\workspace\fipsar_wp_automation\QA\testcases\fipsar.properties -DlogfileLoc=C:\log -Dfipsar.execution.parseq=sequential C:\workspace\fipsar_automation\fipsarqa\target\fipsarqa-jar-with-dependencies.jar
+java -jar -Dfipsar.reporter.config=C:\workspace\fipsar_wp_automation\QA\testcases\fipsar.properties -DlogfileLoc=C:\log -Dfipsar.execution.parseq=sequential C:\workspace\fipsar_wp_automation\fipsarwpqa\target\fipsarwpqa-jar-with-dependencies.jar

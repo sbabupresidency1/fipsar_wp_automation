@@ -120,6 +120,6 @@ public class FAFSmokeTest{
 		driver.findElement(By.id(OR.PATIENT_SUBMIT_BUTTON)).click();
 
 		driver.switchTo().defaultContent();		
-		driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();
 	}
 }

@@ -6,8 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.fipsar.qa.CPR.CPRCommonMethods;
 import com.fipsar.qa.CPR.CPRSmokeTest;
+import com.fipsar.qa.FAF.FAFCommonMethods;
 import com.fipsar.qa.FAF.FAFSmokeTest;
+import com.fipsar.qa.LLS.LLSCommonMethods;
 import com.fipsar.qa.LLS.LLSSmokeTest;
 import com.fipsar.qa.commands.ElementActions;
 import com.fipsar.qa.commands.LocatorBy;
@@ -769,6 +772,21 @@ public class CommandUtils {
 				break;
 			case "LLSSmokeTest":
 				LLSSmokeTest.LLS_Smoke_Test(driver);
+				break;
+			case "CPRLogin":
+				CPRCommonMethods.cpr_Login(driver);
+				break;
+			case "PatientCreation":
+				CPRCommonMethods.patientCreation(driver);
+				break;
+			case "ApplicationCreation":
+				CPRCommonMethods.appCreation(driver, inputData);
+				break;
+			case "LLSLogin":
+				LLSCommonMethods.lls_Login(driver);
+				break;
+			case "FAFLogin":
+				FAFCommonMethods.faf_Login(driver);
 				break;
 			}
 		}

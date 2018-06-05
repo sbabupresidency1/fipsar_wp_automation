@@ -60,7 +60,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class Manipulation extends CommandUtils implements OR {
+public class Manipulation extends CommandUtils {
 
 	static Logger log = Logger.getLogger(Manipulation.class.getName());
 	public static String ElementWait=Directory.WaitFor;
